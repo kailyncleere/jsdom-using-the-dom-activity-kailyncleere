@@ -13,6 +13,10 @@ Hint: https://www.w3schools.com/cssref/css3_pr_opacity.asp
 ________________________________________________________________*/
 
 // Your code here
+let boxtwo = document.getElementById('box-two');
+
+boxtwo.style.opacity = 1;
+
 
 /* _______________________________________________________________
 Part 2.) Reveal Box 9
@@ -32,6 +36,7 @@ Hint: https://www.w3schools.com/jsref/prop_style_display.asp
 ________________________________________________________________*/
 
 // Your code here
+document.querySelector('img[src*="ryan.png"]').style.display = 'block';
 
 /*________________________________________________________________
 Part 3.) Changing the color of the top message
@@ -51,6 +56,8 @@ Hint: https://www.w3schools.com/jsref/prop_style_color.asp
 ________________________________________________________________*/
 
 // Your code here
+let title = document.querySelector('.title__heading');
+title.style = "color: red;" ;
 
 /*________________________________________________________________
 Part 4.) Fix the page title
@@ -65,6 +72,7 @@ Hint: https://www.w3schools.com/jsref/prop_doc_title.asp
 ________________________________________________________________*/
 
 // Your code here
+document.title = 'The Kenzie Bunch'
 
 /*________________________________________________________________
 Part 5.) The Hidden Message
@@ -79,3 +87,8 @@ Hint: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 ________________________________________________________________*/
 
 // Your code here
+let hiddenSpot = document.querySelector('p')
+hiddenSpot.innerHTML = 'hello, World!'
+hiddenSpot.classList.add('hidden-message')
+
+//thanks to zachary!
